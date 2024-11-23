@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="contact-form">
+        <header>Create Account</header>
+        <div class="main">
+            <div class="inner-container flex">
+                <div class="fname-container">
+                    <label for="first-name">First name*</label><br>
+                    <input type="text" name="first-name" id="first-name" placeholder="enter your first name" required>
+                </div>
+                <div class="lname-container">
+                    <label for="last-name">Last name</label><br>
+                    <input type="text" name="last-name" id="last-name" placeholder="enter your last name" required>
+                </div>
+            </div>
+            <div class="inner-container">
+                <label for="email">Email*</label><br>
+                <input type="email" name="email" id="email" placeholder="enter your email" required>
+            </div>
+            <div class="inner-container flex">
+                <div class="password-container">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="enter your password" required>
+                </div>
+                <div class="confirm-container">
+                    <label for="confirm">Confirm Password</label><br>
+                    <input type="password" name="confirm" id="confirm" placeholder="confirm your password" required>
+                </div>
+            </div>
+            <div class="inner-container flex">
+                <div class="gender-container radio-checkbox">
+                    <p class="label">Gender</p>
+                    <div class="checkbox-items gender-items">
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <label class="value" for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label class="value" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="hobby-container radio-checkbox">
+                    <p class="label">Hobbies</p>
+                    <div class="checkbox-items">
+                        <input type="checkbox" name="music" id="music" value="music">
+                        <label class="value" for="music">Music</label>
+                        <input type="checkbox" name="sport" id="sport" value="sport">
+                        <label class="value" for="sport">Sport</label>
+                        <input type="checkbox" name="travel" id="travel" value="travel">
+                        <label class="value" for="travel">Travel</label>
+                        <input type="checkbox" name="movie" id="movie" value="movies">
+                        <label class="value" for="movie">Movies</label>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container flex">
+                <div class="income-container">
+                    <p class="label">Source of Income</p>
+                    <select name="income" id="income">
+                        <option value="employed">Employed</option>
+                        <option value="investor">Investor</option>
+                        <option value="content-creator">Content Creator</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+                <div class="income-range-container">
+                    <label for="income-range">Income</label><br>
+                    <div class="input-range">
+                        <input type="range" name="income-range" id="income-range">
+                        <div class="income-value">20k</div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container flex">
+                <div class="upload-profile-container">
+                    <label for="profile">Upload Profile Picture</label>
+                    <input type="file" name="profile" id="profile">
+                </div>
+                <div class="age-container">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age">
+                </div>
+            </div>
+            <div class="inner-container">
+                <label for="bio">Bio</label><br>
+                <textarea name="bio" id="bi o"></textarea>
+            </div>
+        </div>
+        <footer>
+            <input type="submit" value="Create">
+        </footer>
+    </form>
+</body>
+</html>
